@@ -1,1 +1,30 @@
 @import 'tailwindcss';
+
+@font-face {
+	font-family: 'font';
+	display: swap;
+	src: url('/comic_sans.ttf');
+}
+
+body {
+	@apply bg-white dark:bg-neutral-950;
+	@apply text-black dark:text-neutral-200;
+}
+
+@theme {
+	--font-sans: 'font', sans-serif;
+	--animate-wavy: wavy 2s ease-in-out infinite;
+
+	@keyframes wavy {
+		0% {
+			top: 0px;
+		}
+
+		50% {
+			top: 15px;
+		}
+		100% {
+			top: 0px;
+		}
+	}
+}
