@@ -1,0 +1,22 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<span>
+  {
+    text.split("").map((char, i) => {
+      return (
+        <span
+          class="relative inline-block animate-wavy"
+          style={`animation-delay: ${i * 0.5}s;`}
+        >
+          {char}
+        </span>
+      );
+    })
+  }
+</span>
