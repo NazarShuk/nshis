@@ -27,7 +27,7 @@ const projects = [
   {
     name: "Ncord",
     description: "A simple Discord clone i made for school.",
-    link: "https://ncord.vercel.app/",
+    link: "https://github.com/NazarShuk/ncord-collection",
   },
   {
     name: "Quoter bot",
@@ -47,6 +47,11 @@ const socials = [
     link: "https://youtube.com/@nshis",
     color: "text-red-500",
   },
+  {
+    name: "TikTok",
+    link: "https://tiktok.com/@czar_nazar",
+    color: "text-purple-300",
+  },
 ];
 ---
 
@@ -59,9 +64,9 @@ const socials = [
     </h1>
 
     <p class="">
-      hi my name is nazar, i'm a self-taught developer.
+      hi my name is nazar
       <br />
-      i mostly code in typescript, gdscript, and csharp.
+      i code sometimes
     </p>
   </div>
 
@@ -69,6 +74,7 @@ const socials = [
     <h1 class="text-8xl">
       <WavyText text="Projects" />
     </h1>
+    <p class="mt-5">some work, some don't. most of them don't tho</p>
 
     <div class="mt-5 flex w-fit flex-col items-center justify-center gap-5">
       {
@@ -100,7 +106,7 @@ const socials = [
               href={social.link}
               class="flex flex-col items-center justify-center gap-2"
             >
-              <h2 class="text-xl font-bold {social.color}">{social.name}</h2>
+              <h2 class=`text-xl font-bold ${social.color}`>{social.name}</h2>
             </a>
           );
         })
