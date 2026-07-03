@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Comic';
+    src: url("/comicsans/comic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @theme {
   --animate-wavy: wavy 5s ease-in-out infinite;
 
@@ -24,6 +31,6 @@ body {
 }
 
 * {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic";
 }
 
