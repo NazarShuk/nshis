@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const posts = Object.values(import.meta.glob("./*.md", { eager: true }));
+---
+
+<title>Blog</title>
+
+<Layout>
+    <main class="w-full flex justify-center">
+        <div class="lg:w-1/2 w-full">
+            <h1 class="text-center">Blog</h1>
+
+            <ul class="mt-5">
+                {
+                    posts.map((post: any) => (
+                    <li>
+                        <a href={post.url}>{post.frontmatter.title} - {post.frontmatter.date}</a>
+                    </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </main>
+</Layout>
