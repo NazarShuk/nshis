@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 @font-face {
     font-family: 'Comic';
@@ -39,4 +40,3 @@ body {
 * {
   font-family: "Comic";
 }
-
